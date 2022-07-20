@@ -18,7 +18,7 @@ class NoteBody extends React.Component {
         this.setState({notes});
     }
 
-    onAddNoteHandler({title, body, createdAt}) {
+    onAddNoteHandler({title, body}) {
         this.setState((prevState)=> {
             return{
                 notes : [
