@@ -14,6 +14,8 @@ class NoteApp extends React.Component {
 
         this.onDeleteHandler = this.onDeleteHandler.bind(this);
         this.onAddNoteHandler = this.onAddNoteHandler.bind(this);
+        this.onSearchChangeEventHandler = this.onSearchChangeEventHandler.bind(this);
+        this.onSearchEventHandler = this.onSearchEventHandler.bind(this)
     }
 
     onDeleteHandler(id) {
@@ -28,8 +30,6 @@ class NoteApp extends React.Component {
                 searchTitle: event.target.value,
             };
         });
-
-        this.onSearchChangeEventHandler(event.target.value);
     }
     
     onSearchEventHandler(searchedTitle) {

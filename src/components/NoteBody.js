@@ -18,7 +18,7 @@ class NoteBody extends React.Component {
         this.setState({notes});
     }
 
-    onAddNoteHandler({title, body}) {
+    onAddNoteHandler({title, body, createdAt}) {
         this.setState((prevState)=> {
             return{
                 notes : [
@@ -26,6 +26,7 @@ class NoteBody extends React.Component {
                     {
                         id : +new Date(),
                         title,
+                        createdAt: new Date().toISOString(),
                         body,
                     }
                 ]
