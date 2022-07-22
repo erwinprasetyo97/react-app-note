@@ -13,6 +13,7 @@ const NotesList = ({notes, onDelete}) => {
                 {...note}/>
             ))
         }
+        
     </div>
   );
 }

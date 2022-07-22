@@ -39,7 +39,7 @@ class NoteBody extends React.Component {
           <div className='note-app__body'>
               <NoteInput addNote={this.onAddNoteHandler}/>
               <h2>Catatan Aktif</h2>
-              <NotesList notes={this.state.notes} onDelete={this.onDeleteHandler}/>
+              {this.state.notes.length !== 0 ? <NotesList notes={this.state.notes} onDelete={this.onDeleteHandler}></NotesList> : <div className='empty_note'>Belum ada catatan</div>}
               <h2>Arsip</h2>
           </div>
         )

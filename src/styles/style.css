@@ -46,6 +46,10 @@ input::placeholder, textarea::placeholder {
   padding: 12px;
 }
 
+.empty_note{
+  text-align: center;
+}
+
 .note-app__body h2 {
   font-weight: normal;
   margin: 16px 0;
